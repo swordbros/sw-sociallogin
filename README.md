@@ -29,6 +29,6 @@ sw-sociallogin
     Route::get('auth/fb', 'FacebookController@index')->name('fb.auth');
     Route::get('auth/fb/callback', 'FacebookController@callback');
 
-    Route::get('/auth/vk','SocialController@index')->name('vk.auth');
+    Route::get('auth/vk','SocialController@index')->name('vk.auth');
     Route::get('auth/vk/callback','SocialController@callback');
 ```
