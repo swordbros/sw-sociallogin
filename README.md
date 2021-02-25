@@ -29,6 +29,15 @@ Route::get('auth/fb/callback', 'FacebookController@callback');
 Route::get('auth/vk','SocialController@index')->name('vk.auth');
 Route::get('auth/vk/callback','SocialController@callback');
 ```
+### app/Providers/EventServiceProvider.php
+```
+protected $listen = [
+    \SocialiteProviders\Manager\SocialiteWasCalled::class => [
+        // ... other providers
+        'SocialiteProviders\\VKontakte\\VKontakteExtendSocialite@handle',
+    ],
+];
+```
 ## Using
 ```
 <?php App\Http\Controllers\SocialLoginBase::button('google')?>

@@ -1,7 +1,10 @@
 {
-	"name": "swordbros/sw-sociallogin",
+	"name": "tulparstudyo/sw-sociallogin",
 	"description": "Aimeos sw-sociallogin extension",
-	"keywords": ["aimeos", "extension"],
+	"keywords": [
+		"aimeos",
+		"extension"
+	],
 	"type": "aimeos-extension",
 	"license": "LGPL-3.0",
 	"prefer-stable": true,
@@ -9,8 +12,8 @@
 	"require": {
 		"php": "~7.1",
 		"composer/installers": "^1.0",
-	        "laravel/socialite": "^5.1",
-        	"socialiteproviders/vkontakte": "^4.2"
+		"laravel/socialite": "^5.1",
+		"socialiteproviders/vkontakte": "^4.2"
 	},
 	"autoload": {
 		"psr-4": {
